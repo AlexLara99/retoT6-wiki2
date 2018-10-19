@@ -6,6 +6,9 @@ html {
   #aside {
     display: none;
   }
+  #main{
+  	width: 100%;
+  }
 }
 
 body {
@@ -99,6 +102,31 @@ h1 {
 	padding: 0; 
 }
 
+#menu ul li :hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
 #menu ul li a { 
 	display: block; 
 	float: right; 
@@ -116,8 +144,10 @@ h1 {
 .cajaprincip { 
 	min-height: 600px; 
 	padding: 30px 0; 
-	margin-bottom: 30px; 
-	background: url(img/divisor.png) repeat-x bottom 
+	margin-bottom: 30px;
+
+	background: url(img/divisor.png) repeat-x bottom ;
+	
 }
 
 .img_izquierda { 
@@ -135,15 +165,6 @@ h1 {
 	padding: 9px; 
 	margin-bottom: 10px  }
 
-
-dfn {
-  background: rgba(0,0,0,0.2);
-  border-bottom: dashed 1px rgba(0,0,0,0.8);
-  padding: 0 0.4em;
-  cursor: help;
-  font-style: normal;
-  position: relative;
-  
 }
 .hover_img a { position:relative; }
 .hover_img a span { position:absolute; display:none; z-index:99; }
