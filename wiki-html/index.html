@@ -2,9 +2,17 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<!-- LLAMADAS SCRIPTS Y CSS -->
 <link href="estilo.css" rel="stylesheet" type="text/css" />
+<<script>
+	function mouseIn() {
+  $('.img').addClass('show');
+}
+function mouseOut() {
+  $('.img').removeClass('show');
+}
+$('.hover-me').hover(mouseIn, mouseOut);
 
+</script>
 <title>Wiki 2</title>
 </head>
 
@@ -13,6 +21,7 @@
 	<div id="wrapper"> 
 		<!-- PARTE IZQUIERDA -->
 		<div id="aside">
+			
 			<div id="titulo_general"><a href="index.html">Server Wiki II</a></div>
 			<div id="menu">
 				<ul>
@@ -36,7 +45,15 @@
 
 				<img src="img/kepler.jpg" height="250" width="250" alt="image" class="img_marco img_izquierda" />
 
-				<p align="justify">Lorem fistrum condemor a wan apetecan te va a hasé pupitaa a gramenawer te voy a borrar el cerito no te digo trigo por no llamarte Rodrigor sexuarl amatomaa ese que llega. La caidita está la cosa muy malar papaar papaar ahorarr a gramenawer ese que llega diodeno mamaar ese hombree. Te va a hasé pupitaa benemeritaar hasta luego Lucas a peich. Hasta luego Lucas va usté muy cargadoo papaar papaar condemor caballo blanco caballo negroorl está la cosa muy malar. No puedor quietooor de la pradera a gramenawer está la cosa muy malar pupita va usté muy cargadoo. Ese que llega hasta luego Lucas se calle ustée torpedo diodenoo ese hombree no te digo trigo por no llamarte Rodrigor al ataquerl. No puedor hasta luego Lucas te va a hasé pupitaa diodenoo a gramenawer a gramenawer. La caidita ese pedazo de caballo blanco caballo negroorl llevame al sircoo quietooor me cago en tus muelas condemor. Por la gloria de mi madre papaar papaar amatomaa amatomaa apetecan no te digo trigo por no llamarte Rodrigor apetecan apetecan te va a hasé pupitaa.  </p>
+				<p align="justify">Lorem fistrum condemor a wan apetecan te va a hasé pupitaa a gramenawer te voy a borrar el cerito no te digo trigo por no llamarte Rodrigor sexuarl amatomaa ese que llega. La caidita está la cosa muy malar papaar papaar ahorarr a gramenawer ese que llega diodeno mamaar ese hombree. Te va a hasé pupitaa benemeritaar hasta luego Lucas a peich. 
+					<div class="hover_img">
+    					 <a href="#">Mostrar Imagen
+    					 	<span>
+    					 		<img src="img/kepler2.jpg" class="img_marco" alt="image" height="500" />
+    					 	</span>
+    					 </a>
+					</div>
+				Hasta luego Lucas va usté muy cargadoo papaar papaar condemor caballo blanco caballo negroorl está la cosa muy malar. No puedor quietooor de la pradera a gramenawer está la cosa muy malar pupita va usté muy cargadoo. Ese que llega hasta luego Lucas se calle ustée torpedo diodenoo ese hombree no te digo trigo por no llamarte Rodrigor al ataquerl. No puedor hasta luego Lucas te va a hasé pupitaa diodenoo a gramenawer a gramenawer. La caidita ese pedazo de caballo blanco caballo negroorl llevame al sircoo quietooor me cago en tus muelas condemor. Por la gloria de mi madre papaar papaar amatomaa amatomaa apetecan no te digo trigo por no llamarte Rodrigor apetecan apetecan te va a hasé pupitaa.  </p>
 				
 				<a href="#main" class="arriba">Goruntz</a>
 				
@@ -62,7 +79,7 @@
 			<!-- PRESTASHOP -->			
 			<div id="prestashop" class="cajaprincip">
 
-				<h1>Prestashop</h1>
+				<h1>PrestaShop</h1>
 
 				<img src="img/prestashop.png" height="250" width="250" alt="imagen" class="img_izquierda img_marco" />
 				

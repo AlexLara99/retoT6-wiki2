@@ -1,6 +1,12 @@
 html {
   scroll-behavior: smooth;
 }
+/* @media-query */
+@media screen and (max-width: 987px) {
+  #aside {
+    display: none;
+  }
+}
 
 body {
 	margin: 0;
@@ -36,7 +42,6 @@ body {
 a.arriba { 
 	clear: both; 
 	float: right; 
-	display:block; 
 	margin-top: 40px; 
 	padding: 0 15px 10px; 
 	font-size: 10px; 
@@ -72,7 +77,7 @@ h1 {
 
 #titulo_general a { 
 	font-size: 24px; 
-	font-family: Georgia, "Times New Roman", Times, serif; 
+	font-family: "Times New Roman", Times, serif; 
 	font-weight: 700; 
 	color: #fff 
 }
@@ -97,7 +102,7 @@ h1 {
 #menu ul li a { 
 	display: block; 
 	float: right; 
-	position: relative;  
+	
 	margin-bottom: 10px; 
 	letter-spacing: 3px; 
 	color: #432329; 
@@ -105,7 +110,7 @@ h1 {
 	padding: 0 60px 0 30px; 
 	height: 39px; 
 	line-height: 39px; 
-	background:url(img/pestaña.png) left no-repeat 
+	background:url(img/pestaña.png)
 }
 
 .cajaprincip { 
@@ -130,3 +135,16 @@ h1 {
 	padding: 9px; 
 	margin-bottom: 10px  }
 
+
+dfn {
+  background: rgba(0,0,0,0.2);
+  border-bottom: dashed 1px rgba(0,0,0,0.8);
+  padding: 0 0.4em;
+  cursor: help;
+  font-style: normal;
+  position: relative;
+  
+}
+.hover_img a { position:relative; }
+.hover_img a span { position:absolute; display:none; z-index:99; }
+.hover_img a:hover span { display:block; }
