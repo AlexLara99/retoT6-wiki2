@@ -8,6 +8,8 @@ html {
   }
   #main{
   	width: 100%;
+  	float: left;
+
   }
 }
 
@@ -21,7 +23,9 @@ body {
 	background-color: #a09c93;
 	background-image: url(img/body.jpg);
 	background-repeat: repeat-y;
-	background-position: center
+	background-position: center;
+	display: flex;
+
 }
 
 #wrapper {
@@ -40,6 +44,8 @@ body {
 	width: 650px;
 	padding: 60px 30px 60px 40px;
 	float: right;
+	flex-direction: column;
+	
 }
 
 a.arriba { 
@@ -145,7 +151,6 @@ h1 {
 	min-height: 600px; 
 	padding: 30px 0; 
 	margin-bottom: 30px;
-
 	background: url(img/divisor.png) repeat-x bottom ;
 	
 }
