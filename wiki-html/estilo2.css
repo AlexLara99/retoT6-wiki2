@@ -1,0 +1,171 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	color: #302d26;
+	font-family: sans-serif;
+	font-size: 12px;
+	line-height: 1.4em; 
+	background-color: #9B937E;
+	display: flex;
+
+}
+
+#wrapper {
+	width: 960px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+#aside {
+	position: fixed;
+	width: 240px;
+	text-align: right;
+	display: none;
+}
+
+#main {
+	width: 650px;
+	padding: 60px 30px 60px 40px;
+	float: center;
+	flex-direction: column;
+	flex-align-content:center;
+	
+}
+
+a.arriba { 
+	clear: both; 
+	float: right; 
+	margin-top: 40px; 
+	padding: 0 15px 10px; 
+	font-size: 10px; 
+	color: #000; 
+	font-weight:700;
+	background: url(img/arriba.png) no-repeat bottom center 
+}
+
+p { 
+	margin: 0 0 10px 0; 
+	padding: 0; 
+}
+
+img { 
+	border: none; 
+}
+
+h1 { 
+	color: #000000; 
+	font-weight: normal; 
+	font-size: 36px; 
+	margin: 0 0 30px; 
+	padding: 5px 0  
+}
+
+#titulo_general { 
+	text-align: right; 
+	margin: 80px 0 40px; 
+	width: 220px; 
+	height: 60px; 
+	padding: 20px 10px; 
+	background: url(img/titulo.jpg) no-repeat;
+}
+
+#titulo_general a { 
+	font-size: 24px; 
+	font-family: "Times New Roman", Times, serif; 
+	font-weight: 700; 
+	color: #fff 
+}
+
+
+#menu { 
+	width: 240px; 
+	margin-bottom: 60px; 
+}
+
+#menu ul { 
+	margin: 0; 
+	padding: 0; 
+	list-style: none 
+}
+
+#menu ul li { 
+	margin: 0; 
+	padding: 0; 
+}
+
+#menu ul li :hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+#menu ul li a { 
+	display: block; 
+	float: right; 
+	
+	margin-bottom: 10px; 
+	letter-spacing: 3px; 
+	color: #432329; 
+	text-shadow: 1px 1px 1px #a46d77; 
+	padding: 0 60px 0 30px; 
+	height: 39px; 
+	line-height: 39px; 
+	background:url(img/pestaña.png)
+}
+
+.cajaprincip { 
+	min-height: 600px; 
+	padding: 30px 0; 
+	margin-bottom: 30px;
+	text-align: center;
+	width: 50%;
+	/*background: url(img/divisor.png) repeat-x bottom ;*/
+	
+}
+
+.cajaprincip p{
+	/*width: 40%;*/
+
+}
+
+.img_izquierda { 
+	float: none;
+	margin: 3px 30px 5px 0 
+}
+
+.img_derecha { 
+	float: none; 
+	margin: 3px 0 5px 30px 
+} 
+.img_marco { 
+	border: 1px solid #827863; 
+	background: #a8a08e; 
+	padding: 9px; 
+	margin-bottom: 10px  }
+
+}
+.hover_img a { position:relative; }
+.hover_img a span { position:absolute; display:none; z-index:99; }
+.hover_img a:hover span { display:block; }
