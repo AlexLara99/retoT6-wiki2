@@ -4,25 +4,13 @@
 <meta charset="utf-8">
 <link href="estilo.css" rel="stylesheet" type="text/css" />
 <link href="estilo2.css"  rel="stylesheet" type="text/css" media="screen and (max-width: 900px)"/>
-<script>
-	function mouseIn() {
-  $('.img').addClass('show');
-}
-function mouseOut() {
-  $('.img').removeClass('show');
-}
-$('.hover-me').hover(mouseIn, mouseOut);
-
-</script>
 <title>Wiki 2</title>
 </head>
-
 <body>
 	<!-- TODO-->
 	<div id="wrapper"> 
 		<!-- PARTE IZQUIERDA -->
-		<div id="aside">
-			
+		<div id="aside">		
 			<div id="titulo_general"><a href="index.html">Server Wiki II</a></div>
 			<div id="menu">
 				<ul>
@@ -35,60 +23,53 @@ $('.hover-me').hover(mouseIn, mouseOut);
 			</div> 
 		</div>
 		<!-- FIN PARTE IZQUIERDA -->	
-			
 		<!-- PARTE DERECHA -->		
 		<div id="main">
-			
-		<!-- INICIO -->	
-
+			<!-- INICIO -->	
 			<div id="inicio" class="cajaprincip">
-
 				<h1>Nuestra Wiki</h1>
-
-				<img src="img/nohotros.jpg" height="250" width="250" alt="image" class="img_marco img_izquierda" />
-
-				<p align="justify">Esta Wiki, creada por Alex Lara, Aritz Perez, Gotzon Otazua y Alex Mendiluce, tiene como objetivo explicar paso a paso y de manera sencilla la instalación de Owncloud, Prestashop y Wordpress en nuestro servidor.</p>
-				<p>A lo largo de cuatro semanas hemos recopilado informacion sobre los programas mencionados anteriormente, para poder preparar una documentación comprensible para todo el mundo. Tras una breve explicación de dicho programa, explicaremos los pasos a seguir para instalarlos, con la ayuda de varias imágenes tomadas en el proceso. </p>
-				<p>En la creación de esta wiki se han utilizado: HTML, CSS, Proxmox, GIT, GITHUB.</p>
+				<img src="img/nohotros.jpg" height="250" width="250" alt="image" class="img_marco img_derecha" />
+				<p>Esta Wiki, creada por Alex Lara, Aritz Perez, Gotzon Otazua y Alex Mendiluce, tiene como objetivo explicar paso a paso y de manera sencilla la instalación de Owncloud, Prestashop y Wordpress en nuestro servidor.</p><br>
+				<p>A lo largo de cuatro semanas hemos recopilado informacion sobre los programas mencionados anteriormente, para poder preparar una documentación comprensible para todo el mundo. Tras una breve explicación de dicho programa, explicaremos los pasos a seguir para instalarlos, con la ayuda de varias imágenes tomadas en el proceso. </p><br>
+				<p>En la creación de esta wiki se han utilizado: HTML, CSS, Proxmox, GIT, GITHUB.</p><br>
 				 <audio controls>
   					<source src="audio/audio.mp3" type="audio/mp3">
 						Tu navegador no soporta este elemento de audio
 				</audio> 
 				<img src="img/divisor.png">
 			</div>
-
 			<!--  FIN INICIO -->
+			
 			<!-- APACHE-PHP-MYSQL -->
 			<div id="apache" class="cajaprincip">
-
 			  <h1>Apache, PHP y MySQL</h1>
-
-			  <img src="img/apache.png" height="250" width="250" alt="imagen" class="img_izquierda img_marco" />
-				
-				<p align="justify">Para la instalación de Apache, MySQL, PHP hemos decidido hacerlo de una manera simple, hemos utilizado un paquete complejo de instalación, dicho paquete de instalación es como si fuera un programa a descargar pero lo único que tiene es todos los comandos de instalación de los paquetes deseados. Para realizar la instalación unicamente habría que ejecutar el comando, una vez finalice tendríamos ya instalados tanto el Apache, MySQL y PHP, aparte creara una tarea para cuando iniciemos el equipo inicie los servicios automáticamente.</p>
-			
-				<a href="#main" class="arriba">Goruntz</a>
+			  <img src="img/apache.jpg" height="250" width="250" alt="imagen" class="img_izquierda img_marco" />				
+				<p>Para la instalación de Apache, MySQL, PHP hemos decidido hacerlo de una manera simple, hemos utilizado un paquete complejo de instalación, dicho paquete de instalación es como si fuera un programa a descargar pero lo único que tiene es todos los comandos de instalación de los paquetes deseados.</p><br>
+				<p>Para realizar la instalación unicamente habría que ejecutar el comando que ejecuta el paquete, una vez finalice tendríamos ya instalados tanto el Apache, MySQL y PHP, aparte creara una tarea para cuando iniciemos el equipo inicie los servicios automáticamente.</p>		
+				<a href="#main" class="arriba">Arriba</a>
 				<img src="img/divisor.png">
 			</div> 
 			<!-- FIN APACHE-PHP-MYSQL -->
+
 			<!-- OWNCLOUD -->	
 			<div id="owncloud" class="cajaprincip">
-
 			  <h1>Owncloud</h1>
-
-			  <img src="img/owncloud.png" height="250" width="250" alt="imagen" class="img_derecha img_marco" />
-				
-				<p align="justify">Para la instalación de OwnCloud primero hemos tenido que descargarlo desde la web oficial, una vez descargado en el servidor vamos a extraerlo y le daremos permisos de lectura y escritura a su carpeta para la instalación sin problemas. [IMG 1] </p>
+			  <img src="img/owncloud.png" height="250" width="250" alt="imagen" class="img_derecha img_marco" />			
+				<p>Para la instalación de OwnCloud primero tenemos que descargarlo desde la <a href="https://owncloud.org/download/" target="blank">Web oficial</a> o mediante la consola de comandos de linux</p> <p>Una vez descargado en el servidor vamos a extraerlo y le daremos permisos de lectura y escritura a su carpeta para la instalación sin problemas (en consola, " sudo chmod +rw 'nombre de carpeta'").
 				<div class="hover_img">
-    					 <a href="#">Mostrar Imagen
-    					 	<span>
-    					 		<img src="img/kepler2.jpg" class="img_marco" alt="image" height="500" />
-    					 	</span>
-    					 </a>
-					</div>
-				<p>Una vez finalizado el anterior proceso accederemos a la dirección IP de nuestro servidor, ahi accederemos a la instalación de OwnCloud. En la pagina principal ya nos solicitara que introduzcamos un usuario y una contraseña que usaremos como administrador, en la parte inferior nos solicitara los datos de la base de datos. Solo tendríamos que darle a comenzar instalación y en cuestión de 1 minuto estaría instalada por completo. </p>
-			
-				<a href="#main" class="arriba">Goruntz</a>
+    					 <a>Comando de instalación<span><img src="img/screens/owncloud/owncloud1.png" class="img_marco" alt="image" height="40" /></span></a>
+				</div></p>
+				<p>Una vez finalizado el anterior proceso accederemos a la dirección IP de nuestro servidor, ahi accederemos a la instalación de OwnCloud.</p> 
+				<p>En la pagina principal ya nos solicitara que introduzcamos un usuario y una contraseña que usaremos como administrador, en la parte inferior nos solicitara los datos de la base de datos. 
+				<div class="hover_img">
+    				<a>Configurar los datos<span><img src="img/screens/owncloud/owncloud2.png" class="img_marco" alt="image" height="400" /></span></a>
+				</div></p>
+				<p>Solo tendríamos que darle a comenzar instalación y en cuestión de 1 minuto estaría instalada por completo. </p>
+				<p>Una vez completada la instalación, debemos introducir el nombre de usuario y la contraseña que hemos introducido anteriormente.
+				<div class="hover_img">
+    				<a>Pantalla de inicio<span><img src="img/screens/owncloud/owncloud3.png" class="img_marco" alt="image" height="350" /></span></a>
+				</div></p>	
+				<a href="#main" class="arriba">Arriba</a>
 				<img src="img/divisor.png">
 			</div> 
 
@@ -96,14 +77,17 @@ $('.hover-me').hover(mouseIn, mouseOut);
 			
 			<!-- PRESTASHOP -->			
 			<div id="prestashop" class="cajaprincip">
-
 				<h1>PrestaShop</h1>
-
-				<img src="img/prestashop.png" height="250" width="250" alt="imagen" class="img_izquierda img_marco" />
-				
-				<p align="justify">Para la instalación de PrestaShop primero hemos tenido que descargarlo desde la web oficial, una vez descargado en el servidor vamos a extraerlo y le daremos ermisos de lectura y escritura a su carpeta para la instalación sin problemas. [IMG 1]	Una vez finalizado el anterior proceso accederemos a 	la dirección IP de nuestro servidor, hay accederemos a la instalación de PrestaShop. Tendremos que esperar a que la pagina nos cargue mientras que extrae sus archivos.<br/> Lo primero que nos solicita es que seleccionemos el idioma deseado, una vez seleccionemos el idioma nos aparece los términos y condiciones para aceptar. Ahora el instalador detectara si tenemos todos los requisitos necesarios para poder realizar la instalación de PrestaShop, si todo esta bien nos dejara continuar con la instalación. Llegamos al apartado donde rellenaremos los datos de la tienda; Nombre, país y actividad de la tienda.También en este apartado crearemos el usuario con cual administraremos la tienda. Ahora solo queda esperar a se cree todas las bases de datos y finalice la instalación, esto tardara varios minutos.  </p>
-
-				<a href="#main" class="arriba">Goruntz</a>
+				<img src="img/prestashop.png" height="250" width="250" alt="imagen" class="img_izquierda img_marco" />	
+				<p>Para la instalación de PrestaShop primero hemos tenido que descargarlo desde la <a href="https://www.prestashop.com/es/descarga" target="blank">Web oficial</a>. </p><br>
+				<p>una vez descargado en el servidor vamos a extraerlo y le daremos ermisos de lectura y escritura a su carpeta para la instalación sin problemas. [IMG 1]	</p>
+				<p>Una vez finalizado el anterior proceso accederemos a la dirección IP de nuestro servidor, ahí accederemos a la instalación de PrestaShop. Tendremos que esperar a que la pagina nos cargue mientras que extrae sus archivos.</p>
+				<p>Lo primero que nos solicita es que seleccionemos el idioma deseado, una vez seleccionemos el idioma nos aparece los términos y condiciones para aceptar.</p>
+				<p>Ahora el instalador detectara si tenemos todos los requisitos necesarios para poder realizar la instalación de PrestaShop, si todo esta bien nos dejara continuar con la instalación. </p>
+				<p>Llegamos al apartado donde rellenaremos los datos de la tienda: nombre, país y actividad de la tienda.</p>
+				<p>También en este apartado crearemos el usuario con cual administraremos la tienda. </p>
+				<p>Ahora solo queda esperar a se cree todas las bases de datos y finalice la instalación, esto tardara varios minutos.  </p>
+				<a href="#main" class="arriba">Arriba</a>
 				<img src="img/divisor.png">
 				
 			</div> 
@@ -112,22 +96,19 @@ $('.hover-me').hover(mouseIn, mouseOut);
 
 			<!-- WORDPRESS -->			
 			<div id="wordpress" class="cajaprincip">
-
 				<h1>WordPress</h1>
-
-				<img src="img/wordpress.png" height="250" width="250" alt="imagen" class="img_derecha img_marco"/>
-				
-				<p align="justify">Para la instalación de WordPress primero hemos tenido que descargarlo desde la web oficial, una vez descargado en el servidor vamos a extraerlo y le daremos permisos de lectura y escritura a su carpeta para la instalación sin problemas. [IMG 1] <br/> Una vez finalizado el anterior proceso accederemos a la dirección IP de nuestro servidor, hay accederemos a la instalación de WordPress. En la pagina rincipal nos indicara las pautas que vamos a realizar para instalación. Empecemos con la primera pauta, nos pedirá los datos de la base de datos. Una vez rellenados hará una prueba de acceso a la base de datos y si fuera correcta nos dejara continuar. Ahora llegamos a la ultima pauta que sería rellenar los datos del blog; nombre, usuario admin y su contraseña. Tras finalizar de rellenar los datos daremos en instalar ordPress y al cabo de 1 minuto nos indicara que ya hemos finalizado la instalación. </p>
-				  <video width="320" height="240" controls>
-  					<source src="video/vid.mp4" type="video/mp4">
-						Tu navegador no soporta este video
-					</video> 
-				
-				<a href="#main" class="arriba">Goruntz</a>
+				<img src="img/wordpress.png" height="250" width="250" alt="imagen" class="img_derecha img_marco"/>		
+				<p>Para la instalación de WordPress primero hemos tenido que descargarlo desde la <a href="https://es.wordpress.org/download/" target="blank">Web oficial</a></p>
+				<p>Una vez descargado en el servidor vamos a extraerlo y le daremos permisos de lectura y escritura a su carpeta para la instalación sin problemas. [IMG 1]  </p>
+				<p>Una vez finalizado el anterior proceso accederemos a la dirección IP de nuestro servidor, ahí accederemos a la instalación de WordPress. </p>
+				<p>En la pagina rincipal nos indicara las pautas que vamos a realizar para instalación. </p>
+				<p>Empecemos con la primera pauta, nos pedirá los datos de la base de datos. Una vez rellenados hará una prueba de acceso a la base de datos y si fuera correcta nos dejara continuar. </p>
+				<p>Ahora llegamos a la ultima pauta que sería rellenar los datos del blog: nombre, usuario admin y su contraseña. </p>
+				<p>Tras finalizar de rellenar los datos daremos en instalar WordPress y al cabo de 1 minuto nos indicara que ya hemos finalizado la instalación. </p>
+				<a href="#main" class="arriba">Arriba</a>
 				<img src="img/divisor.png">
 			</div> 
 			<!-- FIN WORDPRESS -->	
-
 		</div> <!-- FIN MAIN -->
 	</div>
 </body>
